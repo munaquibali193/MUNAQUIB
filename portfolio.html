@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portfolio - Munaquib Ali</title>
+  <style>
+    /* Shared styles */
+    *, *::before, *::after { box-sizing: border-box; }
+    body {
+      font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f5f7fa;
+      color: #222;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+    header {
+      background-color: #0d1b2a;
+      padding: 1.5rem 2rem;
+      box-shadow: 0 2px 10px rgb(13 27 42 / 0.3);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: #fff;
+    }
+    header h1 {
+      font-weight: 700;
+      font-size: 1.8rem;
+      letter-spacing: 1px;
+      margin: 0;
+    }
+    nav a {
+      color: #a8c0ff;
+      margin-left: 2rem;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1rem;
+      position: relative;
+      transition: color 0.3s ease;
+    }
+    nav a::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -4px;
+      width: 0;
+      height: 2px;
+      background-color: #4f7df3;
+      transition: width 0.3s ease;
+      border-radius: 2px;
+    }
+    nav a:hover, nav a:focus {
+      color: #4f7df3;
+    }
+    nav a:hover::after, nav a:focus::after {
+      width: 100%;
+    }
+    main {
+      flex-grow: 1;
+      max-width: 720px;
+      margin: 3rem auto;
+      background: #fff;
+      padding: 3rem 2.5rem;
+      border-radius: 12px;
+      box-shadow: 0 20px 40px rgb(13 27 42 / 0.1);
+    }
+    main h2 {
+      font-weight: 700;
+      font-size: 2rem;
+      margin-bottom: 1.5rem;
+      color: #0d1b2a;
+      letter-spacing: 0.5px;
+    }
+    ul.portfolio-list {
+      list-style: none;
+      padding-left: 0;
+      margin: 0;
+      display: grid;
+      grid-template-columns: repeat(auto-fill,minmax(280px,1fr));
+      gap: 1.5rem;
+    }
+    ul.portfolio-list li {
+      background: #f0f4ff;
+      padding: 1.5rem;
+      border-radius: 10px;
+      box-shadow: inset 0 0 10px rgb(79 125 243 / 0.15);
+      transition: background-color 0.3s ease;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      cursor: default;
+    }
+    ul.portfolio-list li:hover {
+      background-color: #d6e0ff;
+    }
+    ul.portfolio-list li h3 {
+      margin: 0 0 0.5rem 0;
+      color: #0d1b2a;
+      font-weight: 700;
+      font-size: 1.25rem;
+    }
+    ul.portfolio-list li p {
+      margin: 0;
+      color: #444;
+      font-size: 1rem;
+      line-height: 1.4;
+    }
+    footer {
+      background-color: #0d1b2a;
+      color: #7a8db0;
+      text-align: center;
+      padding: 1rem 2rem;
+      font-size: 0.9rem;
+      letter-spacing: 0.5px;
+      user-select: none;
+    }
+    @media (max-width: 640px) {
+      main {
+        margin: 2rem 1rem;
+        padding: 2rem 1.5rem;
+      }
+      nav a {
+        margin-left: 1rem;
+        font-size: 0.9rem;
+      }
+      ul.portfolio-list {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Munaquib Ali</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+  <main>
+    <h2>Portfolio</h2>
+    <ul class="portfolio-list">
+      <li>
+        <h3>Moonlit Sonata: Tales Under the Silvery Sky</h3>
+        <p>Exploring themes of the cosmos, culture, and human connection in a narrative format.</p>
+      </li>
+      <li>
+        <h3>Historical Biographies</h3>
+        <p>In-depth writings covering important figures and their contributions.</p>
+      </li>
+      <li>
+        <h3>Short Stories & Novels in Urdu</h3>
+        <p>A collection of modern Urdu literary works focused on storytelling and cultural themes.</p>
+      </li>
+      <li>
+        <h3>Educational Content & Essays</h3>
+        <p>Content aimed at inspiring and educating readers with thoughtful insights.</p>
+      </li>
+    </ul>
+  </main>
+  <footer>© 2025 Munaquib Ali</footer>
+</body>
+</html>
